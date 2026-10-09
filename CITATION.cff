@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+title: "Decoder- and Noise-Aware Optimization Framework for Clifford-Deformed Quantum Error-Correcting Codes"
+type: software
+authors:
+  - family-names: "Bønnelykke"
+    given-names: "Julius Rye"
+    affiliation: "NNF Quantum Computing Programme, Niels Bohr Institute, University of Copenhagen"
+    orcid: "https://orcid.org/0009-0006-7580-6713"
+    email: "julius.rye.boennelykke@nbi.ku.dk"
+  - family-names: "Joecker"
+    given-names: "Benjamin"
+    affiliation: "NNF Quantum Computing Programme, Niels Bohr Institute, University of Copenhagen"
+    orcid: "https://orcid.org/0000-0003-0263-5440"
+  - family-names: "Krogstrup"
+    given-names: "Peter"
+    affiliation: "NNF Quantum Computing Programme, Niels Bohr Institute, University of Copenhagen"
+    orcid: "https://orcid.org/0000-0002-1930-8553"
+  - family-names: "Michal"
+    given-names: "Vincent Philippe"
+    affiliation: "NNF Quantum Computing Programme, Niels Bohr Institute, University of Copenhagen"
+    orcid: "https://orcid.org/0000-0001-8402-5077"
+    email: "vincent.michal@nbi.ku.dk"
+  - family-names: "Svendsen"
+    given-names: "Mark Kamper"
+    affiliation: "NNF Quantum Computing Programme, Niels Bohr Institute, University of Copenhagen"
+    orcid: "https://orcid.org/0000-0001-9718-849X"
+    email: "mark.svendsen@nbi.ku.dk"
+version: "0.1.0"
+license: Apache-2.0
+doi: "10.5281/zenodo.23239737"
+repository-code: "https://github.com/JuliusRye/EBBI"
+keywords:
+  - quantum error correction
+  - surface code
+  - Clifford deformation

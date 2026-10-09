@@ -1,0 +1,42 @@
+{
+    "save_folder_name": "SC3_HBD_MWPM_2_5x",
+    "partition": "qist-fast",
+    "job_memory": "2G",
+    "time_limit_per_job": "50:00:00",
+    "mail_type": "ALL",
+    "mail_user": "julius.rye.boennelykke@nbi.ku.dk",
+    "parallel_jobs": 25,
+    "force_override": false,
+    "auto_run_slurm": true,
+    "job_name": "rs_SC3_HBD_MWPM_2_5x",
+    "candidates": null,
+    "shots_per_candidate": [
+        400000
+    ],
+    "total_shots": [
+        100000000000
+    ],
+    "repeat_same_settings": 25,
+    "rs_args": {
+        "qec": "SurfaceCode",
+        "distance": 3,
+        "rounds": 3,
+        "noise_model": "HBD_noise",
+        "error_probability": 0.0025,
+        "error_bias": 500.0,
+        "max_shot_size": 1000000,
+        "seed": 42,
+        "seeds": null,
+        "force_override": false,
+        "experiments": 1,
+        "active_deformations": [
+            0,
+            2,
+            3
+        ],
+        "candidate_class": "PyMatching",
+        "method_verbose": false,
+        "checkpoint_exponent_base": 0.1,
+        "use_corr_mwpm": false
+    }
+}

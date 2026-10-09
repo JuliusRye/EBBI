@@ -1,0 +1,5 @@
+seed,clifford_deformation,alpha,beta,x-err,y-err,z-err,no-err,shots,method,QECC,n,k,d,noise-model,p,eta,source_file
+1810736590,033000330,252281,99747721,118465,2532,131283,99747720,100000000,cudaqtensor,SurfaceCode,9,1,3,HBD_noise,0.001,500.0,results/brute_force/dec_SC3_HBD_TN/results/sweep_4.csv
+2002991372,222222222,385315,99614687,187233,4625,193456,99614686,100000000,cudaqtensor,SurfaceCode,9,1,3,HBD_noise,0.001,500.0,results/brute_force/dec_SC3_HBD_TN/results/sweep_3.csv
+1650427880,030303030,193444,99806558,91043,1644,100756,99806557,100000000,cudaqtensor,SurfaceCode,9,1,3,HBD_noise,0.001,500.0,results/brute_force/dec_SC3_HBD_TN/results/sweep_2.csv
+679585312,000000000,268363,99731639,94551,2505,171306,99731638,100000000,cudaqtensor,SurfaceCode,9,1,3,HBD_noise,0.001,500.0,results/brute_force/dec_SC3_HBD_TN/results/sweep_1.csv

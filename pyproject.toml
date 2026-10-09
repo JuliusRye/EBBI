@@ -1,0 +1,55 @@
+[project]
+name = "ebbi"
+version = "0.1.0"
+description = "Evolution-Based Best-arm Identification for discovering Clifford-deformed surface codes"
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+authors = [
+    { name = "Julius Rye Bønnelykke", email = "julius.rye.boennelykke@nbi.ku.dk" },
+    { name = "Benjamin Joecker" },
+    { name = "Peter Krogstrup" },
+    { name = "Vincent Philippe Michal", email = "vincent.michal@nbi.ku.dk" },
+    { name = "Mark Kamper Svendsen", email = "mark.svendsen@nbi.ku.dk" },
+]
+requires-python = ">=3.12"
+dependencies = [
+    "beliefmatching>=0.2.0",
+    "cudaq-qec>=0.7.0 ; sys_platform == 'linux'",
+    "ipykernel>=7.3.0",
+    "jax>=0.11.1",
+    "matplotlib>=3.11.1",
+    "numpy>=2.2.6",
+    "pandas>=2.3.3",
+    "pymatching>=2.4.0",
+    "qecsim>=1.0b9",
+    "scipy>=1.18.1",
+    "stim>=1.16.0",
+    "stimbposd>=0.2.0",
+    "tesseract-decoder==0.1.1.dev20260822020007 ; sys_platform == 'linux'",
+    "tqdm>=4.70.0",
+]
+
+[project.urls]
+Repository = "https://github.com/JuliusRye/EBBI"
+Zenodo = "https://doi.org/10.5281/zenodo.23239737"
+
+[project.scripts]
+ebbi = "EBBI.cli.ebbi:main"
+ebbi-rs = "EBBI.cli.rs:main"
+ebbi-pymatching = "EBBI.cli.pymatching_candidate:main"
+ebbi-beliefmatching = "EBBI.cli.beliefmatching_candidate:main"
+ebbi-bposd = "EBBI.cli.bposd_candidate:main"
+ebbi-tesseract = "EBBI.cli.tesseract_candidate:main"
+ebbi-cudaqtensor = "EBBI.cli.cudaqtensor_candidate:main"
+ebbi-job = "EBBI.cli.job_ebbi:main"
+ebbi-job-rs = "EBBI.cli.job_rs:main"
+ebbi-job-brute-force = "EBBI.cli.job_brute_force:main"
+ebbi-job-threshold = "EBBI.cli.job_threshold:main"
+
+[build-system]
+requires = ["uv_build>=0.12,<0.13"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "EBBI"

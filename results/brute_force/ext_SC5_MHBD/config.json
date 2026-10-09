@@ -1,0 +1,32 @@
+{
+    "save_folder_name": "ext_SC5_MHBD",
+    "partition": "qist-fast",
+    "job_memory": "3G",
+    "time_limit_per_job": "10:00:00",
+    "mail_type": "ALL",
+    "mail_user": "julius.rye.boennelykke@nbi.ku.dk",
+    "parallel_jobs": 10,
+    "force_override": false,
+    "auto_run_slurm": true,
+    "job_name": "ext_SC5_MHBD",
+    "cds_per_job": 1,
+    "active_deformations": [
+        0,
+        2,
+        3
+    ],
+    "from_file": "results/brute_force/ext_SC5.txt",
+    "candidate_type": "PyMatching",
+    "candidate_args": {
+        "qec": "SurfaceCode",
+        "distance": 5,
+        "rounds": 5,
+        "noise_model": "MHBD_noise",
+        "error_probability": 0.001,
+        "error_bias": 500.0,
+        "shots": 1000000000,
+        "max_shot_size": 1000000,
+        "force_override": false,
+        "use_corr_mwpm": false
+    }
+}

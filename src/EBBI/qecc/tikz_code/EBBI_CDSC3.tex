@@ -1,0 +1,103 @@
+
+% Define colors for Clifford deformations
+\newcommand{\setmycolor}[1]{%
+    \ifcase#1\relax
+        \def\mycolor{white}%      0
+    \or \def\mycolor{LimeGreen}%  1
+    \or \def\mycolor{BrickRed}%   2
+    \or \def\mycolor{Cerulean}%   3
+    \or \def\mycolor{Fuchsia}%    4
+    \or \def\mycolor{Dandelion}%  5
+    \else \def\mycolor{gray}%     fallback
+    \fi
+}
+\def\numofset{(.1, .02)}
+
+% Place data qubits and stabilizers
+\foreach \pos/\cd in {(-0.5,0.5)/0, (-0.5,-0.5)/3, (-0.5,-1.5)/3, (0.5,0.5)/0, (0.5,-0.5)/2, (0.5,-1.5)/0, (1.5,0.5)/3, (1.5,-0.5)/3, (1.5,-1.5)/0} {
+    \setmycolor{\cd}
+    \draw[fill=\mycolor, line width = .5pt] \pos circle [radius=1mm];
+}
+\foreach \pos in {(-1,-1), (0,0), (1,-1), (2,0), (0,1), (0,-1), (1,0), (1,-2)} {
+    \draw[shift={\pos}, fill] (-0.5mm,-0.5mm) rectangle (0.5mm,0.5mm);
+}
+
+% First 2q-gate set
+\foreach \pos/\angle in {(-0.75,-1.25)/45.0, (0.25,0.75)/45.0, (0.25,-1.25)/45.0} {
+    \begin{scope}[shift={(\pos)}, rotate=\angle]
+        \input{CX}
+        \node at \numofset {\tiny 1};
+    \end{scope}
+}
+\foreach \pos/\angle in {(1.25,-1.25)/45.0, (1.25,-0.25)/45.0} {
+    \begin{scope}[shift={(\pos)}, rotate=\angle]
+        \input{CZ}
+        \node at \numofset {\tiny 1};
+    \end{scope}
+}
+\foreach \pos/\angle in {(0.25,-0.25)/45.0} {
+    \begin{scope}[shift={(\pos)}, rotate=\angle]
+        \input{CY}
+        \node at \numofset {\tiny 1};
+    \end{scope}
+}
+
+% Second 2q-gate set
+\foreach \pos/\angle in {(-0.25,-0.25)/-45.0, (1.75,-0.25)/-45.0, (0.25,-0.75)/135.0, (1.25,-1.75)/135.0} {
+    \begin{scope}[shift={(\pos)}, rotate=\angle]
+        \input{CX}
+        \node at \numofset {\tiny 2};
+    \end{scope}
+}
+\foreach \pos/\angle in {(0.75,-1.25)/-45.0, (1.25,0.25)/135.0} {
+    \begin{scope}[shift={(\pos)}, rotate=\angle]
+        \input{CZ}
+        \node at \numofset {\tiny 2};
+    \end{scope}
+}
+\foreach \pos/\angle in {} {
+    \begin{scope}[shift={(\pos)}, rotate=\angle]
+        \input{CY}
+        \node at \numofset {\tiny 2};
+    \end{scope}
+}
+
+% Third 2q-gate set
+\foreach \pos/\angle in {(-0.75,-0.75)/135.0, (1.25,-0.75)/135.0, (-0.25,0.75)/-45.0, (0.75,-0.25)/-45.0} {
+    \begin{scope}[shift={(\pos)}, rotate=\angle]
+        \input{CX}
+        \node at \numofset {\tiny 3};
+    \end{scope}
+}
+\foreach \pos/\angle in {(0.25,0.25)/135.0, (-0.25,-1.25)/-45.0} {
+    \begin{scope}[shift={(\pos)}, rotate=\angle]
+        \input{CZ}
+        \node at \numofset {\tiny 3};
+    \end{scope}
+}
+\foreach \pos/\angle in {} {
+    \begin{scope}[shift={(\pos)}, rotate=\angle]
+        \input{CY}
+        \node at \numofset {\tiny 3};
+    \end{scope}
+}
+
+% Fourth 2q-gate set
+\foreach \pos/\angle in {(1.75,0.25)/225.0, (0.75,0.25)/225.0, (0.75,-1.75)/225.0} {
+    \begin{scope}[shift={(\pos)}, rotate=\angle]
+        \input{CX}
+        \node at \numofset {\tiny 4};
+    \end{scope}
+}
+\foreach \pos/\angle in {(-0.25,0.25)/225.0, (-0.25,-0.75)/225.0} {
+    \begin{scope}[shift={(\pos)}, rotate=\angle]
+        \input{CZ}
+        \node at \numofset {\tiny 4};
+    \end{scope}
+}
+\foreach \pos/\angle in {(0.75,-0.75)/225.0} {
+    \begin{scope}[shift={(\pos)}, rotate=\angle]
+        \input{CY}
+        \node at \numofset {\tiny 4};
+    \end{scope}
+}

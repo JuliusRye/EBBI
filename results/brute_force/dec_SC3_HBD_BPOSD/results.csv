@@ -1,0 +1,5 @@
+seed,clifford_deformation,alpha,beta,x-err,y-err,z-err,no-err,shots,method,QECC,n,k,d,noise-model,p,eta,max_bp_iters,bp_method,osd_order,osd_method,source_file
+810819441,000000000,295169,99704833,112143,2965,180060,99704832,100000000,bposd,SurfaceCode,9,1,3,HBD_noise,0.001,500.0,30,product_sum,60,osd_cs,results/brute_force/dec_SC3_HBD_BPOSD/results/sweep_1.csv
+1528725435,030303030,246571,99753431,136973,2134,107463,99753430,100000000,bposd,SurfaceCode,9,1,3,HBD_noise,0.001,500.0,30,product_sum,60,osd_cs,results/brute_force/dec_SC3_HBD_BPOSD/results/sweep_2.csv
+1372340605,033000330,277481,99722521,130878,2674,143928,99722520,100000000,bposd,SurfaceCode,9,1,3,HBD_noise,0.001,500.0,30,product_sum,60,osd_cs,results/brute_force/dec_SC3_HBD_BPOSD/results/sweep_4.csv
+1301060589,222222222,404241,99595761,203207,5705,195328,99595760,100000000,bposd,SurfaceCode,9,1,3,HBD_noise,0.001,500.0,30,product_sum,60,osd_cs,results/brute_force/dec_SC3_HBD_BPOSD/results/sweep_3.csv

@@ -1,0 +1,10 @@
+\begin{tabular}{l|cc|cc|l}
+    \multirow{2}{*}{Decoder} & \multicolumn{2}{c|}{$d = 3$} & \multicolumn{2}{c|}{$d = 5$} & \multirow{2}{*}{Compute resource} \\
+     & HBD & HBD-SI1000 & HBD & HBD-SI1000 &  \\
+    \hline
+    PyMatching & $25.5\,\mathrm{s}$ ($1\times$) & --- & $6\,\mathrm{m}\,34\,\mathrm{s}$ ($1\times$) & --- & 1 core, AMD EPYC 9475F \\
+    BeliefMatching & $53\,\mathrm{m}\,06\,\mathrm{s}$ ($125\times$) & --- & $22\,\mathrm{h}\,20\,\mathrm{m}$ ($204\times$) & --- & 1 core, AMD EPYC 9475F \\
+    BP-OSD & $1\,\mathrm{h}\,11\,\mathrm{m}$ ($168\times$) & --- & $45\,\mathrm{h}\,09\,\mathrm{m}$ ($413\times$) & --- & 1 core, AMD EPYC 9475F \\
+    Tesseract & $1\,\mathrm{h}\,49\,\mathrm{m}$ ($258\times$) & --- & $27\,\mathrm{h}\,03\,\mathrm{m}$ ($247\times$) & --- & 1 core, AMD EPYC 9475F \\
+    CudaQ-TN & $41\,\mathrm{m}\,12\,\mathrm{s}$ ($96.9\times$) & --- & --- & --- & 1 NVIDIA H200 NVL, 141 GB \\
+\end{tabular}

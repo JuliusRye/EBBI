@@ -1,0 +1,5 @@
+seed,clifford_deformation,alpha,beta,x-err,y-err,z-err,no-err,shots,method,QECC,n,k,d,noise-model,p,eta,tesseract_det_beam,tesseract_pqlimit,tesseract_low_confidence_shots,source_file
+1032727213,030303030,198305,99801697,91958,1714,104632,99801696,100000000,tesseract,SurfaceCode,9,1,3,HBD_noise,0.001,500.0,5,200000,0,results/brute_force/dec_SC3_HBD_TESS/results/sweep_2.csv
+372005595,222222222,387731,99612271,187105,5253,195372,99612270,100000000,tesseract,SurfaceCode,9,1,3,HBD_noise,0.001,500.0,5,200000,0,results/brute_force/dec_SC3_HBD_TESS/results/sweep_3.csv
+1336158992,033000330,259499,99740503,122838,2291,134369,99740502,100000000,tesseract,SurfaceCode,9,1,3,HBD_noise,0.001,500.0,5,200000,0,results/brute_force/dec_SC3_HBD_TESS/results/sweep_4.csv
+779096424,000000000,274545,99725457,93573,2595,178376,99725456,100000000,tesseract,SurfaceCode,9,1,3,HBD_noise,0.001,500.0,5,200000,0,results/brute_force/dec_SC3_HBD_TESS/results/sweep_1.csv

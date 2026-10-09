@@ -1,0 +1,61 @@
+{
+    "save_folder_name": "SC9_MHBD_MWPM_p_sweep",
+    "jobs_root": "results/thresshold",
+    "partition": "qist-fat",
+    "job_memory": "6GB",
+    "time_limit_per_job": "50:00:00",
+    "mail_type": "ALL",
+    "mail_user": "julius.rye.boennelykke@nbi.ku.dk",
+    "parallel_jobs": 50,
+    "force_override": false,
+    "auto_run_slurm": true,
+    "job_name": "SC9_MHBD_MWPM_p_sweep",
+    "error_probability": [
+        0.022,
+        0.015,
+        0.01,
+        0.0068,
+        0.0046,
+        0.0031,
+        0.0022,
+        0.0015,
+        0.001,
+        0.00068,
+        0.00046,
+        0.00031,
+        0.00022,
+        0.00015,
+        0.0001
+    ],
+    "error_bias": [
+        500.0
+    ],
+    "repeats": 1,
+    "candidate_type": "PyMatching",
+    "candidate_args": {
+        "qec": "SurfaceCode",
+        "distance": 9,
+        "rounds": 9,
+        "noise_model": "MHBD_noise",
+        "clifford_deformations": [
+            "000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "030303030303030303030303030303030303030303030303030303030303030303030303030303030",
+            "033333333003030300030303030003030300030303030003030300030303030003030300333333330"
+        ],
+        "shots": 100000000,
+        "max_shot_size": 1000000,
+        "force_override": false,
+        "use_corr_mwpm": false,
+        "bposd_max_bp_iters": 30,
+        "bposd_bp_method": "product_sum",
+        "bposd_osd_order": 60,
+        "bposd_osd_method": "osd_cs",
+        "bm_max_bp_iters": 20,
+        "bm_bp_method": "product_sum",
+        "tesseract_det_beam": 5,
+        "tesseract_beam_climbing": false,
+        "tesseract_pqlimit": 200000,
+        "tesseract_det_penalty": 0.0,
+        "datasheet_csv_path": null
+    }
+}

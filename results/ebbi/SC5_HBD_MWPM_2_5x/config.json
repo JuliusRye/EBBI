@@ -1,0 +1,68 @@
+{
+    "save_folder_name": "SC5_HBD_MWPM_2_5x",
+    "jobs_root": "results/ebbi",
+    "partition": "qist-fast",
+    "job_memory": "20G",
+    "time_limit_per_job": "5-00:00:00",
+    "mail_type": "ALL",
+    "mail_user": "julius.rye.boennelykke@nbi.ku.dk",
+    "parallel_jobs": 25,
+    "force_override": false,
+    "auto_run_slurm": true,
+    "job_name": "ebbi_SC5_HBD_MWPM_2_5x",
+    "candidates": [
+        10
+    ],
+    "candidates_initially": [
+        null
+    ],
+    "mutation_probability": [
+        null
+    ],
+    "prune_threshold": [
+        0.05
+    ],
+    "improvement_factor": [
+        1.5
+    ],
+    "warmup": [
+        500
+    ],
+    "total_shots": [
+        100000000000
+    ],
+    "repeat_same_settings": 25,
+    "ebbi_args": {
+        "qec": "SurfaceCode",
+        "distance": 5,
+        "rounds": 5,
+        "noise_model": "HBD_noise",
+        "error_probability": 0.0025,
+        "error_bias": 500.0,
+        "max_shot_size": 1000000,
+        "seed": 42,
+        "seeds": null,
+        "force_override": false,
+        "experiments": 1,
+        "active_deformations": [
+            0,
+            2,
+            3
+        ],
+        "candidate_class": "PyMatching",
+        "method_verbose": false,
+        "checkpoint_exponent_base": 0.1,
+        "use_corr_mwpm": false,
+        "bposd_max_bp_iters": 30,
+        "bposd_bp_method": "product_sum",
+        "bposd_osd_order": 60,
+        "bposd_osd_method": "osd_cs",
+        "bm_max_bp_iters": 20,
+        "bm_bp_method": "product_sum",
+        "tesseract_det_beam": 5,
+        "tesseract_beam_climbing": false,
+        "tesseract_pqlimit": 200000,
+        "tesseract_det_penalty": 0.0,
+        "datasheet_csv_path": null
+    }
+}
